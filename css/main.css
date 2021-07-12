@@ -110,11 +110,25 @@ img {
 	margin: 0;
 }
 
-.about {
+.about,
+.making-of {
 	width: 90vw;
 	max-width: 420px;
 	margin: auto;
 	text-align: justify;
+}
+
+.making-of {
+	text-align: center;
+	margin: 64px auto;
+}
+
+.along-player {
+	width: 100%;
+	aspect-ratio: 9 / 16;
+	box-shadow: -4px 12px 20px 0 rgba(0, 0, 0, 0.12);
+	border-radius: 16px;
+	border: 12px solid #fff;
 }
 
 .footer {
@@ -125,7 +139,7 @@ img {
 
 .footer img {
 	width: 64px;
-	border-radius: 4px;
+	border-radius: 6px;
 	box-shadow: -4px 12px 20px 0 rgba(0, 0, 0, 0.12);
 	border: none;
 }
