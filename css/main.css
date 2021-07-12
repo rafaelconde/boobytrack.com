@@ -95,16 +95,17 @@ img {
 	position: relative;
 	height: auto;
 	max-height: 720px;
+	max-width: 405px;
 	border-radius: 16px;
 	border: 12px solid #fff;
-	aspect-ratio: 9 / 16;
+	/* aspect-ratio: 9 / 16; */
 	overflow: hidden;
 	box-shadow: -4px 12px 20px 0 rgba(0, 0, 0, 0.12);
 	transform: translate(0, 40px) rotate(4deg);
 }
 
 .poster video {
-	/* object-fit: fill; */
+	object-fit: fill;
 	margin: 0;
 	width: 100%;
 }
@@ -125,6 +126,8 @@ img {
 .along-player {
 	width: 100%;
 	aspect-ratio: 9 / 16;
+	height: 100vh;
+	max-height: 747px;
 	box-shadow: -4px 12px 20px 0 rgba(0, 0, 0, 0.12);
 	border-radius: 16px;
 	border: 12px solid #fff;
@@ -181,5 +184,6 @@ img {
 	
 	.poster {
 		max-height: 420px;
+		max-width: 236px;
 	}
 }
