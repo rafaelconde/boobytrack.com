@@ -93,21 +93,20 @@ img {
 
 .poster {
 	position: relative;
-	height: 100%;
+	height: auto;
 	max-height: 720px;
 	border-radius: 16px;
 	border: 12px solid #fff;
 	aspect-ratio: 9 / 16;
 	overflow: hidden;
 	box-shadow: -4px 12px 20px 0 rgba(0, 0, 0, 0.12);
-	rotate: 4deg;
-	translate: 0 40px;
+	transform: translate(0, 40px) rotate(4deg);
 }
 
 .poster video {
-	object-fit: fill;
-	height: 100%;
+	/* object-fit: fill; */
 	margin: 0;
+	width: 100%;
 }
 
 .about,
@@ -177,16 +176,10 @@ img {
 		margin-left: 0;
 		width: 100%;
 		justify-content: center;
-		translate: 0 -72px;
+		transform: translate(0, -72px);
 	}
 	
 	.poster {
-		width: 80%;
-	}
-	
-	.poster video {
-		width: 100%;
-		height: auto;
-		aspect: 9 / 16;
+		max-height: 420px;
 	}
 }
