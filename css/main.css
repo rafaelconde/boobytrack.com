@@ -73,7 +73,7 @@ img {
 .cta {
 	max-width: 564px;
 	padding: 40px;
-	margin-right: -40px;
+	margin-right: -64px;
 	text-shadow: 0px 1px 4px var(--background);
 	z-index: 2;
 }
@@ -87,7 +87,7 @@ img {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	margin-left: -40px;
+	margin-left: -64px;
 	z-index: 1;
 }
 
@@ -108,6 +108,33 @@ img {
 	object-fit: fill;
 	margin: 0;
 	width: 100%;
+}
+
+.mute-switch {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 12px;
+	background: rgba(0, 0, 0, 0.1);
+	background-size: 100% 100%;
+	z-index: 9;
+}
+
+#mute-switch-off,
+#mute-switch-on {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#mute-switch-on {
+	opacity: 0;
+}
+
+.mute-switch:hover {
+	cursor: pointer;
 }
 
 .about,
